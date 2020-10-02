@@ -49,3 +49,8 @@ variable "additional_tags" {
   description = "Additional resource tags"
   type        = map(string)
 }
+
+variable "remote_state_bucket" {
+  description = "Remote state bucket"
+  type        = string
+}
