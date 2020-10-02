@@ -42,3 +42,8 @@ variable "open_vpn_source_ip" {
   description = "OpenVPN instance ip so that it can access pihole as DNS server."
   type        = string
 }
+
+variable "r53_zone_id" {
+  description = "Route 53 Zone ID"
+  type        = string
+}
