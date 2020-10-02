@@ -18,4 +18,9 @@ variable "aws_dynamodb_table_name" {
   description = "Name for the backend state locking table"
   type        = string
   default     = "terraform-statelock"
-} 
+}
+
+variable "bucket_key" {
+  description = "State bucket remote state folder name"
+  default     = "terraform-aws/pihole_openvpn/"
+}

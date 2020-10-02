@@ -17,5 +17,5 @@ resource "aws_s3_bucket" "terraform_remotestate" {
 
 resource "aws_s3_bucket_object" "remotestate_folder" {
   bucket = aws_s3_bucket.terraform_remotestate.id
-  key    = "terraform-aws/pihole_openvpn/"
+  key    = var.bucket_key
 }
